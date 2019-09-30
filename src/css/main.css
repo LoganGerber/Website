@@ -1,55 +1,75 @@
 html, body {
+    /* Full screen page. */
     height: 100%;
     width: 100%;
     margin: 0px;
 }
 
 body {
+    /* Set base background color. */
     background: #303033;
 }
 
 #navbar {
+    /* Have the navbar float on the top of the page */
     position: fixed;
     top: 0px;
 
+    /* Navbar sizing to be the width of the page */
     height: 65px;
     width: 100%;
+
+    /* Debug background color purple */
     background: purple;
 }
 
 #content {
+    /* Make the main content a flexbox */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
 
+    /* Stretch the content to the bottom of the window */
     height: 100%;
 
+    /* push the content below the navbar */
     padding-top: 65px;
 
+    /* Move padding inside content box */
     box-sizing: border-box;
 }
 
 #text {
-    background: #303033;
+    /* On desktop view, show text section to the right of the images */
     order: 1;
+
+    /* Desktop, Text section should take up half the screen */
     width: 50%;
 
+    /* Move padding inside content box */
     box-sizing: border-box;
 
+    /* Debug background coloring */
     background: red;
 }
 
 #images {
+    /* On desktop view, show images section to the left of text */
     order: 0;
+
+    /* Desktop, images section should take up half the screen */
     width: 50%;
 
+    /* Images to be displayed in a columnar flexbox */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
+    /* Move padding into the content box */
     box-sizing: border-box;
 
+    /* Debug background coloring */
     background: orange;
 }
