@@ -52,6 +52,8 @@ body {
 
     /* Debug background coloring */
     background: red;
+
+    overflow: auto;
 }
 
 #images {
@@ -72,4 +74,6 @@ body {
 
     /* Debug background coloring */
     background: orange;
+
+    overflow: auto;
 }
