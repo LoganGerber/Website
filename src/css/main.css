@@ -53,6 +53,8 @@ body {
     /* Debug background coloring */
     background: red;
 
+    text-align: center;
+
     overflow: auto;
 }
 
