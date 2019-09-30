@@ -77,3 +77,12 @@ body {
 
     overflow: auto;
 }
+
+figure.linked-img > img {
+    width: 100%;
+    max-height: 100px;
+}
+
+figure.linked-img > figcaption {
+    text-align: center;
+}
