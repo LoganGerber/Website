@@ -13,8 +13,8 @@ body {
     top: 0px;
 
     height: 65px;
-    background: #303033;
     width: 100%;
+    background: purple;
 }
 
 #content {
@@ -24,7 +24,6 @@ body {
     align-items: stretch;
 
     height: 100%;
-    background: purple;
 
     padding-top: 65px;
 
@@ -42,7 +41,6 @@ body {
 }
 
 #images {
-    background: #303033;
     order: 0;
     width: 50%;
 
