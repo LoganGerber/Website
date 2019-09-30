@@ -88,7 +88,7 @@ figure.linked-img {
 
 figure.linked-img > img {
     width: 100%;
-    max-height: 100px;
+    max-height: 800px;
 
     margin: 0px;
 }
