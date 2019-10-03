@@ -1,0 +1,11 @@
+extends entry
+
+block content
+
+    #text test text
+
+    #images
+        each imgageInfo in images
+            figure.linked-img
+                img(src=imageInfo.image alt=imageInfo.description)
+                figcaption #{imageInfo.caption}
