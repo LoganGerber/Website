@@ -32,7 +32,7 @@ router.get("/", function(req, res, next) {
         }
     ];
     
-    res.render("post", { title: "Website", imageInfos: imageInfoArray });
+    res.render("postpage", { title: "Website", imageInfos: imageInfoArray });
 });
 
 module.exports = router;
