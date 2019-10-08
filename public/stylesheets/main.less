@@ -1,0 +1,112 @@
+@import "./utils/palettes/darkAndBlue.less";
+
+html,
+body {
+    // Full screen page.
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+body {
+    // Set base background color.
+    background: @background;
+}
+
+#navbar {
+    // Have the navbar float on top of the page.
+    position: fixed;
+    top: 0px;
+
+    // Navbar sizing to be the width of the page.
+    height: 65px;
+    width: 100%;
+
+    // Debug background coloring.
+    background: purple;
+}
+
+#content {
+    // Make the main content a flexbox.
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    // Stretch the content to the bottom of the window.
+    height: 100%;
+
+    // Push the content below the navbar.
+    padding-top: 65px;
+
+    // Move padding inside the content box.
+    box-sizing: border-box;
+}
+
+#text {
+    // On desktop view, show text section to the right of the images.
+    order: 1;
+
+    // Desktop, Text section should take up half the screen.
+    width: 50%;
+
+    // Move padding inside the content box.
+    box-sizing: border-box;
+
+    // Center text.
+    text-align: center;
+
+    // Allow for scrolling through section.
+    overflow: auto;
+
+    // Debug background coloring.
+    background: red;
+}
+
+#images {
+    // On desktop view, show images section to the left of text.
+    order: 0;
+
+    // Desktop, Images section should take up half the screen.
+    width: 50%;
+
+    // Images to be displayed in a columnar flexbox.
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Move padding into the content box.
+    box-sizing: border-box;
+
+    // Allow for scrolling through section.
+    overflow: auto;
+
+    // Debug background coloring.
+    background: orange;
+}
+
+figure.linked-img{
+    // Add margins to the top and bottom of Images section.
+    margin-top: 50px;
+    margin-bottom: 5px;
+
+    // Debug background coloring.
+    background: yellow;
+}
+
+figure.linked-img>img {
+    // Allow image to be up to 600px, and up to the images section's width
+    width: 100%;
+    max-height: 600px;
+
+    // Remove margins from images
+    margin: 0px;
+}
+
+figure.linked-img>figcaption {
+    // Center images' caption text.
+    text-align: center;
+
+    // Remove margins from the caption.
+    margin: 0px;
+}
