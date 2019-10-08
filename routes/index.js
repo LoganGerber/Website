@@ -11,6 +11,11 @@ router.get("/", function(req, res, next) {
             "caption": "800 x 800"
         },
         {
+            "image": "/images/placeholders/1000x300.png",
+            "description": "1000x300 image desc",
+            "caption": "1000 x 300"
+        },
+        {
             "image": "/images/placeholders/1920x1080.png",
             "description": "1920x1080 image desc",
             "caption": "1920 x 1080"
