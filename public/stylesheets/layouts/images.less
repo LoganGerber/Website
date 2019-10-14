@@ -5,7 +5,7 @@ div#images {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     // Move the padding into the content box.
     box-sizing: border-box;
 
@@ -15,19 +15,19 @@ div#images {
     padding-top: @images-padding-top;
     padding-left: @images-padding-left;
 
-    & figure:last-child{
+    & figure:last-child {
         padding-bottom: @images-padding-bottom;
     }
 
-    figure{
+    figure {
         padding-bottom: @images-padding-between;
     }
 }
 
-div#images when (@image-right-use-padding = true){
+div#images when (@image-right-use-padding =true) {
     padding-right: @images-padding-right;
 }
 
-div#images when (@image-right-use-padding = false){
+div#images when (@image-right-use-padding =false) {
     margin-right: @images-padding-right;
 }
