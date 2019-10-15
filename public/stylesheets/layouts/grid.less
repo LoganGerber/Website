@@ -3,5 +3,5 @@
 .blog-grid {
     display: grid;
     grid-template-columns: [images-start] 50% [images-end text-start] 50% [text-end];
-    grid-template-rows: @navbar-height auto @footer-height;
+    grid-template-rows: [nav-start] @navbar-height [nav-end content-start] auto [content-end footer-start] @footer-height [footer-end];
 }
