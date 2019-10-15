@@ -2,6 +2,6 @@
 
 .blog-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: [images-start] 50% [images-end text-start] 50% [text-end];
     grid-template-rows: @navbar-height auto @footer-height;
 }
