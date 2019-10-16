@@ -1,33 +1,41 @@
-@import "../utils/padding";
+@import 'grid';
 
 div#images {
-    // Display the images in a flexbox
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    // Move the padding into the content box.
-    box-sizing: border-box;
-
-    // Allow for scrolling.
-    overflow: auto;
-
-    padding-top: @images-padding-top;
-    padding-left: @images-padding-left;
-
-    & figure:last-child {
-        padding-bottom: @images-padding-bottom;
-    }
-
-    figure {
-        padding-bottom: @images-padding-between;
-    }
+    grid-area: images;
+    place-self: stretch;
 }
 
-div#images when (@image-right-use-padding =true) {
-    padding-right: @images-padding-right;
-}
 
-div#images when (@image-right-use-padding =false) {
-    margin-right: @images-padding-right;
-}
+// @import "../utils/padding";
+
+// div#images {
+//     // Display the images in a flexbox
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     // Move the padding into the content box.
+//     box-sizing: border-box;
+
+//     // Allow for scrolling.
+//     overflow: auto;
+
+//     padding-top: @images-padding-top;
+//     padding-left: @images-padding-left;
+
+//     & figure:last-child {
+//         padding-bottom: @images-padding-bottom;
+//     }
+
+//     figure {
+//         padding-bottom: @images-padding-between;
+//     }
+// }
+
+// div#images when (@image-right-use-padding =true) {
+//     padding-right: @images-padding-right;
+// }
+
+// div#images when (@image-right-use-padding =false) {
+//     margin-right: @images-padding-right;
+// }
