@@ -1,4 +1,5 @@
 @import 'grid.less';
+@import '../utils/variables.less';
 
 nav#navbar {
     grid-area: nav;
@@ -9,4 +10,10 @@ nav#navbar {
 
     justify-content: flex-start;
     align-items: flex-end;
+
+
+    box-sizing: border-box;
+    padding-left: @navbar-padding-left;
+    padding-bottom: @navbar-padding-bottom;
+    padding-right: @navbar-padding-right;
 }
