@@ -16,6 +16,7 @@ div#images-container {
 
         padding-top: @images-padding-top;
         padding-left: @images-padding-left;
+        padding-right: @images-padding-right;
 
         & figure:last-child {
             margin-bottom: @images-padding-bottom;
@@ -25,12 +26,4 @@ div#images-container {
             margin-bottom: @images-padding-between;
         }
     }
-}
-
-div#images-container when (@images-right-use-padding = true) {
-    padding-right: @images-padding-right;
-}
-
-div#images-container when (@images-right-use-padding = false) {
-    margin-right: @images-padding-right;
 }
