@@ -17,4 +17,12 @@ nav#navbar {
     padding-left: @navbar-padding-left;
     padding-bottom: @navbar-padding-bottom;
     padding-right: @navbar-padding-right;
+
+    & .nav-flex-item:first-child {
+        padding-left: 0;
+    }
+
+    & .navbar-flex-item:last-child {
+        padding-right: 0;
+    }
 }
