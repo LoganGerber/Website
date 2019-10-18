@@ -1,8 +1,28 @@
 @import 'grid.less';
+@import '../utils/variables.less';
 
 div#text-container {
     grid-area: content-right;
     place-self: stretch;
 
     overflow: auto;
+
+    #text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-sizing: border-box;
+        padding-top: @text-padding-top;
+        padding-left: @text-padding-left;
+        padding-right: @text-padding-right;
+
+        & p:last-child {
+            margin-bottom: @text-padding-bottom;
+        }
+
+        p {
+            margin-bottom: @text-padding-between;
+        }
+    }
 }
