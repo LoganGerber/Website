@@ -3,6 +3,23 @@
 #title-bar {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
+
+    width: 100%;
 
     padding-bottom: @title-bar-padding-bottom;
+
+    #back-button {
+        flex-grow: 1;
+    }
+
+    #title {
+        flex-grow: 2;
+    }
+
+    #right-spacer {
+        flex-grow: 1;
+    }
 }
