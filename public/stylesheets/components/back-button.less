@@ -1,8 +1,18 @@
-#back-button {
+@import '../utils/variables.less';
+
+a#back-button {
     display: flex;
     flex-direction: row;
 
+    display: inline-block;
+
     img {
-        max-height: 1em;
+        max-height: @back-button-max-height;
+        vertical-align: middle;
+        
+        padding-right: @back-button-center-spacing;
+    }
+    span {
+        vertical-align: middle;
     }
 }
