@@ -1,0 +1,36 @@
+@import '../utils/variables.less';
+
+.button {
+    display: inline-block;
+
+    img {
+        max-width: 1em;
+    }
+}
+
+.button {
+
+    &-left-aligned,
+    &-right-aligned {
+
+        img {
+            vertical-align: middle;
+        }
+
+        span {
+            vertical-align: middle;
+        }
+    }
+
+    &-left-aligned {
+        img {
+            padding-right: @image-button-center-spacing;
+        }
+    }
+
+    &-right-aligned {
+        img {
+            padding-left: @image-button-center-spacing;
+        }
+    }
+}
