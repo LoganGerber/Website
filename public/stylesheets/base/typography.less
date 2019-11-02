@@ -1,3 +1,5 @@
+@import '../utils/variables.less';
+
 .text {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,23 +9,28 @@
 }
 
 .text-xl {
-    font-size: 30pt;
-    font-weight: 700;
+    font-size: @text-xlarge-size;
+    font-weight: @text-xlarge-weight;
 }
 
 .text-l {
-    font-size: 20pt;
-    font-weight: 700;
+    font-size: @text-large-size;
+    font-weight: @text-large-weight;
 }
 
 .text-m {
-    font-size: 15pt;
-    font-weight: 400;
+    font-size: @text-medium-size;
+    font-weight: @text-medium-weight;
+}
+
+.text-s {
+    font-size: @text-small-size;
+    font-weight: @text-small-weight;
 }
 
 h1 {
-    font-size: 75pt;
-    font-weight: 700;
+    font-size: @h1-size;
+    font-weight: @h1-weight;
 
     text-align: center;
 }
