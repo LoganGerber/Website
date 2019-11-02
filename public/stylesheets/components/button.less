@@ -1,36 +1,103 @@
 @import '../utils/variables.less';
 
 .button {
-    display: inline-block;
-
-    img {
-        max-width: 1em;
-    }
+    display: flex;
+    
+    align-items: center;
 }
 
 .button {
 
     &-left-aligned,
     &-right-aligned {
+        flex-direction: row;
+    }
 
-        img {
-            vertical-align: middle;
-        }
-
-        span {
-            vertical-align: middle;
-        }
+    &-top-center-aligned,
+    &-bottom-center-aligned {
+        justify-content: center;
+        flex-direction: column;
     }
 
     &-left-aligned {
+        justify-content: flex-start;
+
         img {
             padding-right: @button-center-spacing;
+
+            order: 0;
+        }
+
+        span {
+            order: 1;
         }
     }
 
     &-right-aligned {
+        justify-content: flex-end;
+
         img {
             padding-left: @button-center-spacing;
+
+            order: 1;
+        }
+
+        span {
+            order: 0;
+        }
+    }
+
+    &-top-center-aligned {
+        img {
+            padding-bottom: @button-center-spacing;
+
+            order: 0;
+        }
+
+        span {
+            order: 1;
+        }
+    }
+
+    &-bottom-center-aligned {
+        img {
+            padding-top: @button-center-spacing;
+            order: 1;
+        }
+
+        span {
+            order: 0;
+        }
+    }
+
+    &-small {
+        img {
+            max-height: @image-small-size;
+        }
+
+        span {
+            font-size: @text-small-size;
+            font-weight: @text-small-weight;
+        }
+    }
+
+    &-medium {
+        img {
+            max-height: @image-medium-size;
+        }
+        span {
+            font-size: @text-medium-size;
+            font-weight: @text-medium-weight;
+        }
+    }
+    
+    &-large {
+        img {
+            max-height: @image-large-size;
+        }
+        span {
+            font-size: @text-large-size;
+            font-weight: @text-large-weight;
         }
     }
 }
