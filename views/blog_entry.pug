@@ -5,11 +5,15 @@ block content
         #text
             #iteration-bar
                 #back-button-container(class='iteration-bar-item')
-                    a(id='back-button' class='button button-left-aligned' href='#' class='remove-decoration')
-                        img(src='/images/icons/back-arrow.png')
-                        span(class='text text-l text-primary') Back
-                #menu-button-container(class='iteration-bar-item') menu
-                #forward-button-container(class='iteration-bar-item') FORRRWARRRDDDDDDDD
+                    a(id='back-button' class='remove-decoration button button-large button-left-aligned' href='#')
+                        img(src='/images/icons/arrow.png')
+                        span(class='text text-primary') Back
+                #menu-button-container(class='iteration-bar-item')
+                    a(id='menu-button' class='remove-decoration button button-large button-top-center-aligned' href='#')
+                        span(class='text text-primary') Menu
+                #forward-button-container(class='iteration-bar-item')
+                    a(id='next-button' class='remove-decoration button button-large button-right-aligned' href='#')
+                        span(class='text text-primary') Next
             #title
                 h1(id='title' class='text text-primary') Entry Title
             p(class='text text-block text-primary text-m') Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores, sed nesciunt itaque natus autem sint labore qui omnis ullam dolorum, vitae perspiciatis numquam porro. Eveniet, nihil fugit. Reiciendis, fuga!
