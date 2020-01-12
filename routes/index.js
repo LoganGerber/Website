@@ -36,7 +36,7 @@ router.get("/", function(req, res, next) {
             "caption": "4032 x 3024"
         }
     ];
-    
+
     res.render("blog_entry", { title: "Website", imageInfos: imageInfoArray });
 });
 
