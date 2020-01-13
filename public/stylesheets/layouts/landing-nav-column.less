@@ -1,0 +1,22 @@
+@import 'grid.less';
+@import '../utils/variables.less';
+
+div#nav-sections-container {
+    grid-area: content-right;
+    align-self: center;
+    justify-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .nav-section-item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .nav-section-item {
+        margin-bottom: @nav-section-item-padding-between;
+        font-size: 45pt;
+        font-weight: 700;
+    }
+}
