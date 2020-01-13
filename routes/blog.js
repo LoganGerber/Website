@@ -12,6 +12,12 @@ mongoClient.connect((err) => {
     sites = mongoClient.db('website-test').collection('pages');
 })
 
+router.get("/", function(req, res, next) {
+    sites.find({}).toArray(function(err, docs) {
+        res.send(docs);
+    });
+});
+
 router.get("/:articleTitle", function(req, res, next) {
     sites.find({url: req.params["articleTitle"]}).toArray((function(err, docs) {
         if(err){
