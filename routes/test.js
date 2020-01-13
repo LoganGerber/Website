@@ -37,7 +37,7 @@ router.get("/", function(req, res, next) {
         }
     ];
 
-    res.render("blog_entry", { title: "Website", imageInfos: imageInfoArray });
+    res.render("test", { title: "Website", imageInfos: imageInfoArray });
 });
 
 module.exports = router;
