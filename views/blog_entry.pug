@@ -19,11 +19,11 @@ block content
             #title-container
                 h1(id='title' class='text text-primary') Entry Title
             each paragraph in paragraphs
-                p(class='text text-bloc text-primary text-m') #{paragraph}
+                p(class='text text-bloc text-primary text-2') #{paragraph}
 
     #images-container
         #images
             each imageInfo in imageInfos
                 figure.linked-img
                     img(src=imageInfo.image alt=imageInfo.description)
-                    figcaption(class='text text-primary text-m') #{imageInfo.caption}
+                    figcaption(class='text text-primary text-2') #{imageInfo.caption}
