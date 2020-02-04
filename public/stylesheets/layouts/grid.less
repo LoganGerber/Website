@@ -15,3 +15,19 @@ div.main-grid {
 
     place-items: stretch;
 }
+
+div.mono-grid {
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+
+    grid-template-rows: @navbar-height calc(100vh - @navbar-height @footer-height) @footer-height;
+
+    grid-template-areas:
+        "nav nav nav"
+        "padding-left content padding-right"
+        "footer footer footer";
+
+    column-gap: 0px;
+
+    place-items: stretch;
+}
