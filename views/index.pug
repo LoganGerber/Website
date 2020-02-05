@@ -1,17 +1,35 @@
-extends main
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/main.css')
+    body
+        .main-grid
+            nav#navbar
+                a(href='/' class='nav-flex-item remove-decoration')
+                    span(class='text text-primary text-3') Logan Gerber
+                a(href='resume' class='nav-flex-item remove-decoration')
+                    span(class='text text-primary text-4') Resumé
+                a(class='nav-icon nav-flex-item nav-right' href='https://github.com/LoganGerber')
+                    img(src='/images/icons/github.png' alt='Github')
+                a(class='nav-icon nav-flex-item' href='#')
+                    img(src='/images/icons/linkedin.png' alt='Linked In')
+                a(class='nav-icon nav-flex-item' href='#')
+                    img(src='/images/icons/email.png' alt='email')
+                // TODO: Add quick links to email, linkedin, github
+                // TODO: Add hamburger menu
 
-block content
-    #name-column
-        span(class='text text-primary text-1' id='name-large') Logan Gerber
-        span(class='text text-primary text-2' id='title-large') Software Engineer
-    #nav-column
-        a(href='resume' class='nav-column-item remove-decoration')
-            span(class='text text-primary text-2') Resumé
-        a(href='experience' class='nav-column-item remove-decoration')
-            span(class='text text-primary text-2') Experience
-        a(href='projects' class='nav-column-item remove-decoration')
-            span(class='text text-primary text-2') Projects
-        a(href='skills' class='nav-column-item remove-decoration')
-            span(class='text text-primary text-2') Skills
-        a(href='blog' class='nav-column-item remove-decoration')
-            span(class='text text-primary text-2') Blog
+            #name-column
+                span(class='text text-primary text-1' id='name-large') Logan Gerber
+                span(class='text text-primary text-2' id='title-large') Software Engineer
+            #nav-column
+                a(href='resume' class='nav-column-item remove-decoration')
+                    span(class='text text-primary text-2') Resumé
+                a(href='experience' class='nav-column-item remove-decoration')
+                    span(class='text text-primary text-2') Experience
+                a(href='projects' class='nav-column-item remove-decoration')
+                    span(class='text text-primary text-2') Projects
+                a(href='skills' class='nav-column-item remove-decoration')
+                    span(class='text text-primary text-2') Skills
+                a(href='blog' class='nav-column-item remove-decoration')
+                    span(class='text text-primary text-2') Blog

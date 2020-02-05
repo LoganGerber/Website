@@ -1,29 +1,48 @@
-extends main
+doctype html
+html
+    head
+        title=title
+        link(rel='stylesheet' href='/stylesheets/main.css')
+    body
+        .main-grid
+            nav#navbar
+                a(href='/' class='nav-flex-item remove-decoration')
+                    span(class='text text-primary text-3') Logan Gerber
+                a(href='resume' class='nav-flex-item remove-decoration')
+                    span(class='text text-primary text-4') Resumé
+                a(class='nav-icon nav-flex-item nav-right' href='https://github.com/LoganGerber')
+                    img(src='/images/icons/github.png' alt='Github')
+                a(class='nav-icon nav-flex-item' href='#')
+                    img(src='/images/icons/linkedin.png' alt='Linked In')
+                a(class='nav-icon nav-flex-item' href='#')
+                    img(src='/images/icons/email.png' alt='email')
+                // TODO: Add quick links to email, linkedin, github
+                // TODO: Add hamburger menu
 
-block content
-    #text-container
-        #text
-            #iteration-bar
-                #back-button-container(class='iteration-bar-item')
-                    a(id='back-button' class='remove-decoration button button-large button-left-aligned' href='#')
-                        img(src='/images/icons/arrow-left.png')
-                        span(class='text text-primary') Back
-                #menu-button-container(class='iteration-bar-item')
-                    a(id='menu-button' class='remove-decoration button button-large button-left-aligned' style='justify-content: center;' href='#')
-                        img(src='/images/icons/hamburger.png')
-                        span(class='text text-primary') Menu
-                #forward-button-container(class='iteration-bar-item')
-                    a(id='next-button' class='remove-decoration button button-large button-right-aligned' href='#')
-                        img(src='/images/icons/arrow-right.png')
-                        span(class='text text-primary') Next
-            #title-container
-                h1(id='title' class='text text-primary') Entry Title
-            each paragraph in paragraphs
-                p(class='text text-block text-primary text-5') #{paragraph}
+            #text-container
+                #text
+                    #iteration-bar
+                        #back-button-container(class='iteration-bar-item')
+                            a(id='back-button' class='remove-decoration button button-large button-left-aligned' href='#')
+                                img(src='/images/icons/arrow-left.png')
+                                span(class='text text-primary') Back
+                        #menu-button-container(class='iteration-bar-item')
+                            a(id='menu-button' class='remove-decoration button button-large button-left-aligned' style='justify-content: center;' href='#')
+                                img(src='/images/icons/hamburger.png')
+                                span(class='text text-primary') Menu
+                        #forward-button-container(class='iteration-bar-item')
+                            a(id='next-button' class='remove-decoration button button-large button-right-aligned' href='#')
+                                img(src='/images/icons/arrow-right.png')
+                                span(class='text text-primary') Next
+                    #title-container
+                        h1(id='title' class='text text-primary') Entry Title
+                    each paragraph in paragraphs
+                        p(class='text text-block text-primary text-5') #{paragraph}
 
-    #images-container
-        #images
-            each imageInfo in imageInfos
-                figure.linked-img
-                    img(src=imageInfo.image alt=imageInfo.description)
-                    figcaption(class='text text-primary text-5') #{imageInfo.caption}
+            #images-container
+                #images
+                    each imageInfo in imageInfos
+                        figure.linked-img
+                            img(src=imageInfo.image alt=imageInfo.description)
+                            figcaption(class='text text-primary text-5') #{imageInfo.caption}
+            #footer
