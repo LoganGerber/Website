@@ -21,7 +21,12 @@ html
 
             #list-layout-column
                 form#search-component
-                    label#search-label(for='search-input')
-                    input#search-input(type='search')
+                    input(id='search-input' type='search' placeholder='Search...')
+					button(id='submit-search' type='submit')
                 #entries
+					each entry in foundEntries
+						.found-entry
+							h4.entry-title #{entry.title}
+							span.entry-date #{entry.date}
+							p.entry-brief #{entry.brief}
             #footer
